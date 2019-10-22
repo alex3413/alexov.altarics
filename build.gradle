@@ -27,6 +27,15 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'org.springframework.boot:spring-boot-starter-web-services'
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	 api 'org.apache.commons:commons-math3:3.6.1'
+   
+   // https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager
+	compile group: 'org.hibernate', name: 'hibernate-entitymanager', version: '5.4.4.Final'
+	// https://mvnrepository.com/artifact/org.hibernate/hibernate-c3p0
+	compile group: 'org.hibernate', name: 'hibernate-c3p0', version: '5.4.3.Final'
+	
+   
+	compile group: 'org.hibernate', name: 'hibernate-core', version: '5.4.6.Final'
 	runtimeOnly 'org.postgresql:postgresql'
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
